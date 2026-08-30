@@ -1,6 +1,6 @@
 # ComputacionGrafica
-**NOMBRE COMPLETO:** Romero Zamorano Rosa Jennifer\
-**Número de Cuenta:** 314321600\
-**GRUPO DE LABORATORIO:** 02\
-**GRUPO DE TEORÍA:** 07\
-**SEMESTRE:** 2027-1\
+**Nombre completo:** Romero Zamorano Rosa Jennifer\
+**Número de cuenta:** 314321600\
+**Grupo de laboratorio:** 02\
+**Grupo de teoría:** 07\
+**Semestre:** 2027-1
