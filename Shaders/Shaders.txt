@@ -1,1 +1,0 @@
-Carpeta de shaders usados para la P02
