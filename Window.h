@@ -1,0 +1,51 @@
+#pragma once
+#include<stdio.h>
+#include<glew.h>
+#include<glfw3.h>
+
+class Window
+{
+public:
+	Window();
+	Window(GLint windowWidth, GLint windowHeight);
+	int Initialise();
+	GLfloat getBufferWidth() { return bufferWidth; }
+	GLfloat getBufferHeight() { return bufferHeight; }
+	GLfloat getXChange();
+	GLfloat getYChange();
+	GLfloat getmuevex() { return muevex; }
+	bool getShouldClose() {
+		return  glfwWindowShouldClose(mainWindow);}
+	bool* getsKeys() { return keys; }
+	void swapBuffers() { return glfwSwapBuffers(mainWindow); }
+	GLfloat getAvanceLlantas() { return avanceLlantas; }
+	GLfloat getMovSatY() { return movSatY; }
+	GLfloat getMovSatZ() { return movSatZ; }
+	GLint getColorFaro() { return colorFaro; }
+	bool getLuzHolocron() { return luzHolocron; }
+	bool getLuzPinza() { return luzPinza; }
+	bool getLuzNave() { return luzNave; }
+	bool getMotor1() { return motor1; }
+	bool getMotor2() { return motor2; }
+	
+	~Window();
+private: 
+	GLFWwindow *mainWindow;
+	GLint width, height;
+	bool keys[1024];
+	GLint bufferWidth, bufferHeight;
+	void createCallbacks();
+	GLfloat lastX;
+	GLfloat lastY;
+	GLfloat xChange;
+	GLfloat yChange;
+	GLfloat muevex;
+	GLfloat movSatY, movSatZ, avanceLlantas;
+	GLint colorFaro;
+	bool luzHolocron, luzPinza, luzNave, motor1, motor2;
+	bool mouseFirstMoved;
+	static void ManejaTeclado(GLFWwindow* window, int key, int code, int action, int mode);
+	static void ManejaMouse(GLFWwindow* window, double xPos, double yPos);
+
+};
+
