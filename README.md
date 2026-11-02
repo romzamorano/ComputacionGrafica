@@ -1,2 +1,2 @@
 # ComputacionGrafica
-Rama de la Practica 09-2
+Rama de la Practica09-2
